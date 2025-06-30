@@ -129,7 +129,7 @@ class OrderViewModel (private val userRepository: OrderRepository) : ViewModel()
     fun getAll(): Flow<List<Order>> = userRepository.getAll()
 
     fun insertOrder(order: Order) = viewModelScope.launch {
-        userRepository.insertUser(order)
+        userRepository.insertOrder()
     }
 
 

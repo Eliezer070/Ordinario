@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.Flow
 class OrderRepository(private val userDao: OrderDao) {
     fun getAll():  Flow<List<Order>> = userDao.getOrders()
 
-    suspend fun insertUser(order: Order)
-            = userDao.insertOrder(order)
+    suspend fun insertOrder(order: Order)
+            = userDao.insertOrder()
 
 }

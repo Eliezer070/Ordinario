@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.Flow
 interface OrderDao {
 
     @Insert
-    suspend fun insertOrder(order: Order)
+    suspend fun insertOrder()
 
     @Delete
     suspend fun deleteAllUsers(order: Order)
