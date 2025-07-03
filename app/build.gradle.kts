@@ -53,7 +53,7 @@ dependencies {
     implementation(libs.androidx.livedata)
     implementation(libs.androidx.savesatate)
     implementation(libs.androidx.navigation)
-    implementation(libs.androidx.room)
+    ksp(libs.androidx.ksp)
     implementation(libs.kotlin.coroutines)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
